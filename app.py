@@ -74,7 +74,7 @@ def get_atlas_link(region_name, mapping):
 structure_map = load_structure_map()
 
 # Page Config
-st.set_page_config(page_title="MRI Data Browser", layout="wide")
+st.set_page_config(page_title="FOXG1 patient-specific mouse model's MRI browser", layout="wide")
 
 # Data Loading
 @st.cache_data
@@ -90,7 +90,7 @@ df = load_data()
 
 if df is not None:
     # Sidebar
-    st.sidebar.title("MRI Browser")
+    st.sidebar.title("FOXG1 patient-specific mouse model's MRI browser")
     
     # 1. Search/Select Region
     # Filter columns to find measurements (exclude metadata)
